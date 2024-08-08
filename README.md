@@ -1,4 +1,9 @@
 # RICA<sup>2</sup>: Rubric-Informed, Calibrated Assessment of Actions (ECCV 2024)
+
+Project Page: [https://abrarmajeedi.github.io/rica2_aqa/](https://abrarmajeedi.github.io/rica2_aqa/)  
+Arxiv Link: [https://arxiv.org/abs/2408.02138](https://arxiv.org/abs/2408.02138)
+
+
 ## Code
 Code will be released with the ECCV proceedings. Stay tuned!
   
@@ -22,3 +27,16 @@ The ability to quantify how well an action is carried out, also known as action 
 
 ## Contact
 Email: majeedi+at+wisc+dot+edu
+
+## Citation
+If you find our work useful, please consider citing:
+
+```bibtex
+@article{majeedi24rica2,
+    title={RICA^2: Rubric-Informed, Calibrated Assessment of Actions}, 
+    author={Majeedi, Abrar and Gajjala, Viswanatha Reddy and GNVV, Satya Sai Srinath Namburi and Li, Yin},
+    year={2024},
+    booktitle={European conference on computer vision},
+    primaryClass={cs.CV}
+}
+```
