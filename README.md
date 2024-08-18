@@ -1,5 +1,8 @@
 # RICA<sup>2</sup>: Rubric-Informed, Calibrated Assessment of Actions (ECCV 2024)
 
+ 	
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rica-2-rubric-informed-calibrated-assessment/action-quality-assessment-on-finediving)](https://paperswithcode.com/sota/action-quality-assessment-on-finediving?p=rica-2-rubric-informed-calibrated-assessment)   [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rica-2-rubric-informed-calibrated-assessment/action-quality-assessment-on-jigsaws)](https://paperswithcode.com/sota/action-quality-assessment-on-jigsaws?p=rica-2-rubric-informed-calibrated-assessment) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rica-2-rubric-informed-calibrated-assessment/action-quality-assessment-on-mtl-aqa)](https://paperswithcode.com/sota/action-quality-assessment-on-mtl-aqa?p=rica-2-rubric-informed-calibrated-assessment)
+
 Project Page: [https://abrarmajeedi.github.io/rica2_aqa/](https://abrarmajeedi.github.io/rica2_aqa/)  
 Arxiv Link: [https://arxiv.org/abs/2408.02138](https://arxiv.org/abs/2408.02138)
 
