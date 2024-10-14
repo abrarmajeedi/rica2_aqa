@@ -1,6 +1,6 @@
 # RICA<sup>2</sup>: Rubric-Informed, Calibrated Assessment of Actions (ECCV 2024)
 ## Code
-Code will be released with the ECCV proceedings. Stay tuned!
+The code release got delayed due to the recent ICLR deadline. We are now working on releasing the code as soon as possible. Stay tuned!
   
 ## Abstract
 
