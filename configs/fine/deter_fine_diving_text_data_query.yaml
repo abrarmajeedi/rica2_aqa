@@ -1,0 +1,95 @@
+dataset_name: finediving
+model_name : 'aqa-model'
+train_split: 'train'
+val_split: 'test'
+devices: [0]
+dataset: {
+  data_root :  ./data/finediving, 
+  video_dir: FINADiving_MTL_256s,
+  label_file : FineDiving_fine-grained_annotation.pkl,
+  coarse_label_file : FineDiving_coarse_annotation.pkl,
+  train_datafile : train_split.pkl ,
+  test_datafile : test_split.pkl ,
+  use_feats : False,
+  feat_dir : "",
+  frames_per_clip : 96,
+  window_size : 16,
+  stride : 10,
+  max_seq_len: 9,
+  input_frame_size : [112,200],
+  crop_frame_size : 112,
+  with_dd : True,
+  three_judge_score_scaling : False,  
+}
+model: {
+  backbone_type : 'convEncoder', 
+  input_feat_dim: 1024, #feats or from the feat extractor
+  embed_dim: 512,
+  conv_dropout: 0.1, #drop out for initial conv layers
+  conv_kernel_size: 3,
+  neck_type: 'decoder-neck',
+  num_layers : {
+        n_conv_layers: 2,
+        n_encoder_layers: 2,
+        n_decoder_layers: 2,
+        n_mlp_head_layers : 2, #for now this is hardcoded to 3 layers
+        },
+  encoder_params: {
+    n_encoder_heads: 8,
+    attn_pdrop: 0.1,
+    proj_pdrop: 0.1,
+    path_pdrop: 0.1,
+    use_abs_pe: False,
+  },
+  decoder_params: {
+    n_decoder_heads: 8, 
+    stride: 1,
+    attn_pdrop: 0.1,
+    proj_pdrop: 0.1,
+    path_pdrop: 0.1,
+    xattn_mode: 'affine', 
+    with_ln: True,
+    query_config: {
+      text_embeddings_path: assets/FineDiving_t5_xxl_text_embeddings.npy, #relative to the project root
+      freeze_text_embeddings: True,
+      text_queries_emb_dim: 4096,
+      },
+  },
+  use_stochastic_embd: False,
+  num_random_samples: 1,
+  num_phases: 29, # =num of total subaction, check dataloader for more details
+  score_bins: 1,
+  }
+opt: {
+  learning_rate: 0.0005, #this will get scaled by batchsize
+  warmup_epochs: 3,
+  schedule_type: "no_decay",
+  epochs: 350,
+  weight_decay: 0.0,
+  feature_extractor_factor: 0.3, #lr for the feature extractor will be scaled by this factor
+  neck_lr_factor: 1.0, #lr for the neck will be scaled by this factor
+}
+loader: {
+  #for train and test batch_size provide how many samples can fit on one 8GB GPU e.g. for MTL this is 1 and 2, for finediving, this is 2 and 4
+  train_batch_size : 8, #this can get overwritten  by arg
+  test_batch_size:  16, #this can get overwritten  by arg
+  num_workers: 4, #this will also be changed dynamically based on cpu count, this is min number, max is 20
+}
+train_cfg: {
+  dataset_name: finediving,
+  clip_grad_l2norm: 1.0,
+  accumulation_steps: 1,  #how many steps/batches to accumulate gradients before taking an optimizer step
+  loss_weights: {
+          loss: mse,
+          quality_score: 1.0,
+          phase_vib : 0.0, # 1e-3
+          scale_vib: False,
+          ranking: 0.05, # use > 0.0 to enable
+          sparsity: 0.05 # use > 0.0 to enable 
+  },
+}
+test_cfg: {
+}
+output_folder: ./ckpt/
+
+
