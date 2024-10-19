@@ -16,11 +16,6 @@ Pull the code using
  
 
     cd rica2_aqa
-
-
-## Requirements
-
-Please find the installation instructions in [INSTALL.md](./INSTALL.md)
   
 
 ## Data

@@ -9,7 +9,7 @@ Python >= 3.8
 ## PyTorch
 
 PyTorch >=  2.4.1 
-[(Get PyTorch Here](https://pytorch.org/get-started/locally/)
+[(Get PyTorch Here)](https://pytorch.org/get-started/locally/)
 
 ## Requirements
 Install the required libraries with :
