@@ -1,6 +1,15 @@
 # RICA<sup>2</sup>: Rubric-Informed, Calibrated Assessment of Actions (ECCV 2024)
 
-  
+[![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://abrarmajeedi.github.io/rica2_aqa/)
+[![arXiv](https://img.shields.io/badge/arXiv-2312.04364-b31b1b.svg)](https://arxiv.org/abs/2408.02138)
+[![Page Views Count](https://badges.toozhao.com/badges/01J65G5SQJXDP6QZETBDXH4C6E/green.svg)](https://badges.toozhao.com/stats/01J65G5SQJXDP6QZETBDXH4C6E "Get your own page views count badge on badges.toozhao.com")
+
+ 	
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rica-2-rubric-informed-calibrated-assessment/action-quality-assessment-on-mtl-aqa)](https://paperswithcode.com/sota/action-quality-assessment-on-mtl-aqa?p=rica-2-rubric-informed-calibrated-assessment)[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rica-2-rubric-informed-calibrated-assessment/action-quality-assessment-on-finediving)](https://paperswithcode.com/sota/action-quality-assessment-on-finediving?p=rica-2-rubric-informed-calibrated-assessment)   [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rica-2-rubric-informed-calibrated-assessment/action-quality-assessment-on-jigsaws)](https://paperswithcode.com/sota/action-quality-assessment-on-jigsaws?p=rica-2-rubric-informed-calibrated-assessment) 
+
+
+
+
 ## Abstract
 
 ![Teaser figure](assets/teaser_fig.png)
@@ -24,6 +33,20 @@ The ability to quantify how well an action is carried out, also known as action 
 Please find the installation instructions in [INSTALL.md](./INSTALL.md)
 
 Instructions to run the code can be found in [ GETTING_STARTED.md](./GETTING_STARTED.md)
+
+
+## Citation
+If you find our work useful, please consider citing:
+
+```bibtex
+@article{majeedi24rica2,
+    title={RICA^2: Rubric-Informed, Calibrated Assessment of Actions}, 
+    author={Majeedi, Abrar and Gajjala, Viswanatha Reddy and GNVV, Satya Sai Srinath Namburi and Li, Yin},
+    year={2024},
+    booktitle={European conference on computer vision},
+    primaryClass={cs.CV}
+}
+```
 
 
 ## Contact
