@@ -74,12 +74,22 @@ To run the deterministic  RICA<sup>2</sup>†
 
     python -u train.py configs/mtl_aqa/deter_mtl_diving_text_data_query.yaml
 
+
+These commands will train the specified models and automatically run the evaluation, generating the evaluation results at the end.
+
+
+## [BONUS] Tuning Experiment Parameters
+
+Our code allows easy change of model and experiment parameters:
+
 ### Modifying  hyperparameters
 
-You can modify different hyperparameters of the models by changing the config files in `./configs`
+You can modify different hyperparameters of the models and training by changing values within in the config files in `./configs`
 
 
 ### Generating text embeddings
+
+RICA<sup>2</sup> incorporates the step information in the an action via LLM embedddings extracted from the textual step descriptions. These can be found `./tools`.
 
 For FineDiving
 
@@ -88,3 +98,11 @@ For FineDiving
 For MTL-AQA
 
     python ./tools/mtl_aqa/mtl_t5xxl_text_embed_extraction.py
+
+
+You can easily change the models used for extracting embeddings from the step descriptions by following the user-friendly [HuggingFace documentation](https://huggingface.co/docs).
+
+
+## Contact
+
+Email: majeedi+at+wisc+dot+edu
