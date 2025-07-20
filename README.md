@@ -2,10 +2,6 @@
 
 [![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://abrarmajeedi.github.io/rica2_aqa/)
 [![arXiv](https://img.shields.io/badge/arXiv-2312.04364-b31b1b.svg)](https://arxiv.org/abs/2408.02138)
-[![Page Views Count](https://badges.toozhao.com/badges/01J65G5SQJXDP6QZETBDXH4C6E/green.svg)](https://badges.toozhao.com/stats/01J65G5SQJXDP6QZETBDXH4C6E "Get your own page views count badge on badges.toozhao.com")
-
- 	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rica-2-rubric-informed-calibrated-assessment/action-quality-assessment-on-mtl-aqa)](https://paperswithcode.com/sota/action-quality-assessment-on-mtl-aqa?p=rica-2-rubric-informed-calibrated-assessment)[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rica-2-rubric-informed-calibrated-assessment/action-quality-assessment-on-finediving)](https://paperswithcode.com/sota/action-quality-assessment-on-finediving?p=rica-2-rubric-informed-calibrated-assessment)   [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/rica-2-rubric-informed-calibrated-assessment/action-quality-assessment-on-jigsaws)](https://paperswithcode.com/sota/action-quality-assessment-on-jigsaws?p=rica-2-rubric-informed-calibrated-assessment) 
 
 
 
