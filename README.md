@@ -5,6 +5,9 @@
 
 
 
+Check out the new Medium post on RICA<sup>2</sup>!    [![Medium](https://img.shields.io/badge/Medium-%23000000.svg?logo=medium&logoColor=white)](https://namburisrinath.medium.com/rica%C2%B2-rubric-informed-calibrated-assessment-of-actions-92b5715a9163)
+
+
 
 ## Abstract
 
